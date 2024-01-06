@@ -1,6 +1,9 @@
-from completion import post_completion
+from completion import stream_completion
 import asyncio
 
+async def print_completion():
+    async for x in stream_completion("Write a poem on America in 50 words or less"):
+        print(x)
+
 if __name__ == "__main__":
-    asyncio.run(post_completion("Write a poem on America in 20 words or less"))
-    #post_completion("Write a poem on America in 20 words or less")
+    asyncio.run(print_completion())

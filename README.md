@@ -1,2 +1,2 @@
-# Advanced_RAG
-A repository displaying how to build a production-grade advanced RAG bot
+# Local Retrieval augmented generation
+How to build and host a retrieval augmented generation locally

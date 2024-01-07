@@ -10,8 +10,10 @@ How to build and host a retrieval augmented generation system locally
 
 # TechStack:
 
-- Python to load and serve the model.
-- Javascript to build the UI.
+- Python to load and serve the model. (CTransformers)
+- Python to load documents and build index. (tesseract, pdfminer, langchain, chromaDB)
+- Python for API (flask, websocket)
+- Javascript to build the UI. (react)
 
 # Functions:
 

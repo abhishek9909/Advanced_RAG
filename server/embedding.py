@@ -1,6 +1,8 @@
-### 
-
-def index_embeddings_to_db():
+### Given a text string, chunk and index.
+def index_documents_to_db():
     return None
-def generate_embedding():
+
+
+### Given a text string and embedding context, search over the index.
+def search_documents():
     return None

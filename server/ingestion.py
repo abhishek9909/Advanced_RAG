@@ -5,7 +5,6 @@ from pdfminer.high_level import extract_text
 from PIL import Image as im
 from pytesseract import image_to_string
 
-
 def prepare_page_images(file_path):
     dpi = 300
     zoom = dpi / 72

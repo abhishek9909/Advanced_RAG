@@ -5,6 +5,11 @@ from completion import get_completion
 from langchain.text_splitter import RecursiveCharacterTextSplitter, SentenceTransformersTokenTextSplitter
 from sentence_transformers import CrossEncoder
 
+### Find all indexes for the persistent client.
+def find_all_collections():
+    client = chromadb.PersistentClient("../assets/chromadb/")
+    return client.list_collections()
+
 ### Given a text string, chunk and index the same as db.
 def index_documents_to_db(text, collection_name = "default"):
     chunks = _divide_text_into_chunks(text)
